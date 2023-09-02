@@ -174,8 +174,9 @@ cps = []
 #-----[Main-Menu]-----#
 def mumit_menu():
     os.system('clear');print(logo)
-    print('\033[1;92m [1] RANDOM CRACK')
-    print('\033[1;92m [2] ADMIN BIPUL')
+    print('\033[1;92m [1] FILE CLONING')
+    print('\033[1;92m [2] RANDOM CRACK')
+    print('\033[1;92m [3] ADMIN BIPUL')
     print('\033[1;92m [0] EXIT TOOL')
     linex()
     mumit=input(' \033[1;32m[?] SELECT MENU: ')
