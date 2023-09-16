@@ -121,7 +121,7 @@ for xd in range(10000):
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
     l='1000'
-    uaku2=(f'{aa} '{b}; '{c}'{d}'{e}'{f}) '{g}'{h}.{i}.{j}.{k} '{l}')
+    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
          
 class jalan:
