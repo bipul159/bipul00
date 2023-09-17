@@ -287,7 +287,7 @@ def mumitx(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                if 'y' in cp_cpx: 
+                if 'n' in cp_cpx: 
                  print('\r\r\033[1;30m[BIPUL-CP😭]  ' +uid+ ' | ' +ps+ ' \033[0;97m')
                 open('/sdcard/BIPUL-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 cps.append(cid)
